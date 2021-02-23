@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Caja Contenedora -->
+    <div class="container" id="contenedor">
+        <!-- Header -->
+        <header class="header">    
+            <!-- Puntuacion -->      
+            <div>
+                Puntuacion <span id="salida"></span>: <span id="puntos">0</span>
+            </div>
+            <!-- Vidas --> 
+            <div class="cajavidas" id="cajavidas">                
+                
+            </div>
+        </header>      
+               
+        <!-- Visor juego -->
+        <section class="izquierda">
+            <span id="error" class="error"></span>
+            <!-- Caja animacion -->   
+            <div class="cajaanimacion" id="cajaanimacion">   
+                <img class="cajaanimacion__img cajaanimacion__img--bus" id="caja__img" src="image/bus.png" alt="">
+                <img class="cajaanimacion__img cajaanimacion__img--meta"  src="image/edificio.png" alt="">
+            </div>
+            <!-- Caja preguntas -->           
+            <div id="cajapregunta" class="cajapregunta">    
+                <img class="cajapregunta__img" src="image/numeros/interrogacion.png" alt="" id="num1">
+                <img class="cajapregunta__img" src="image/numeros/interrogacion.png" alt="" id="signo_juego">
+                <img class="cajapregunta__img" src="image/numeros/interrogacion.png" alt="" id="num2">
+                <img class="cajapregunta__img" src="image/numeros/igual1.png" alt="" id="igual">   
+                <img class="cajapregunta__img" src="image/numeros/interrogacion.png" alt="" id="resultado"> 
+                <img class="cajapregunta__img" src="image/numeros/interrogacion.png" alt="" id="resultado2"> 
+                <img class="cajapregunta__img" src="image/numeros/interrogacion.png" alt="" id="resultado3">  
+            </div>
+
+            <!-- Caja respuestas -->
+            <div id="contrespuestas" class="grid">
+          
+            </div>
+
+            <!-- Boton siguiente y jugar -->
+            <button  id="siguiente" class="siguiente btn_jugar">
+                <span>Siguiente</span> 
+            </button>
+
+       
+            <button class="btn_jugar" id="jugar">
+                <span>Jugar</span> 
+            </button>    
+        </section>
+
+
+          <!-- Configuracion -->
+        <section class="derecha" id="tipojuego">    
+            <input type="text" id="entrada" value="" class="form" placeholder="Introduce tu nombre">           
+            Selecciona el juego:              
+            <div class="contenedortipo">               
+                <img src="image/numeros/suma.png" class="contenedortipo__signos">               
+                <img src="image/numeros/resta.png" class="contenedortipo__signos">               
+                <img src="image/numeros/multiplica.png" class="contenedortipo__signos">
+                <img src="image/numeros/divide.png" class="contenedortipo__signos">           
+            </div>                
+        </section>     
+
+    <script src="js/javascript.js"></script>
+</body>
+</html>
